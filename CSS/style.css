@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Delius+Unicase:wght@400;700&family=Genos:ital,wght@0,100..900;1,100..900&family=Merienda:wght@300..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", serif;
+  font-weight: normal;
+  font-style: normal;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  color: #e5e3e3;
+  height: 100vh;
+}
+ul{
+    list-style: none;
+}
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 15px;
+}
+.main-heading {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 25px auto 0;
+  width: 50%;
+  background-color: #f6f6f6;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #000;
+  padding: 16px 0;
+  border-radius: 60px;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+.bus {
+  display: flex;
+  justify-content: start;
+}
+.bus-all-seat {
+  margin-top: 10px;
+  width: 50%;
+  text-align: center;
+  border-right: 1px solid #fff;
+  padding-right: 25px;
+}
+.bus-all-seat h3 {
+  margin: 12px 0;
+}
+.seat-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px 0;
+}
+.seat-row-num {
+  height: 4em;
+  width: 14%;
+  line-height: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+}
+.female-seat {
+  background: radial-gradient(
+    circle,
+    rgba(178, 64, 212, 1) 0%,
+    rgba(137, 26, 158, 1) 25%,
+    rgba(118, 12, 149, 1) 50%,
+    rgba(126, 17, 149, 1) 75%,
+    rgba(94, 2, 121, 1) 100%
+  );
+  height: 4em;
+  width: 14%;
+  line-height: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  cursor: pointer;
+}
+.not-seat {
+  height: 4em;
+  width: 14%;
+  line-height: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+}
+
+.female-seat:hover, .male-seat:hover {
+    background: radial-gradient(
+      circle,
+      rgba(219, 215, 215, 1) 0%,
+      rgba(205, 205, 205, 1) 25%,
+      rgba(195, 192, 192, 1) 50%,
+      rgba(204, 204, 204, 1) 75%,
+      rgba(207, 207, 207, 1) 100%
+    );
+    color: #1a1c1e;
+  }
+  
+.male-seat {
+  background: radial-gradient(
+    circle,
+    rgba(156, 195, 222, 1) 0%,
+    rgba(110, 185, 238, 1) 25%,
+    rgba(64, 144, 212, 1) 50%,
+    rgba(46, 135, 196, 1) 75%,
+    rgba(40, 121, 177, 1) 100%
+  );
+  height: 4em;
+  width: 14%;
+  line-height: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  cursor: pointer;
+}
+.seat-booking {
+  width: 50%;
+  text-align: start;
+  margin-top: 10px;
+  padding-left: 45px;
+}
+.seat-booking form h2 {
+  margin: 25px 0 20px 0;
+  font-size: 17px;
+}
+.seat-booking form h3 {
+  margin: 5px 5px 0 0;
+  font-size: 14px;
+}
+#selected-seat {
+  min-height: 10em;
+  overflow-y: scroll;
+  background: #fff;
+  padding: 0.5em 1em;
+  overflow: scroll;
+  height: 200px;
+}
+#selected-seat::after {
+  content: "Please select Seat/s first";
+  color: #6c6c6c;
+}
+
+#selected-seat.has-seats::after {
+  content: none; 
+}
+
+#selected-seat  li{
+    color: black;
+}
+.checkout-button {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  border-radius: 10px;
+  display: block;
+  background-image: linear-gradient(
+    to right,
+    #77a1d3 0%,
+    #79cbca 51%,
+    #77a1d3 100%
+  );
+  border: none;
+  cursor: pointer;
+}
+.checkout-button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+.seat-chart ul li{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+.seat-chart ul li div{
+    margin-right: 15px;
+}
+.female-seat-type{
+    background: radial-gradient(
+    circle,
+    rgba(178, 64, 212, 1) 0%,
+    rgba(137, 26, 158, 1) 25%,
+    rgba(118, 12, 149, 1) 50%,
+    rgba(126, 17, 149, 1) 75%,
+    rgba(94, 2, 121, 1) 100%
+  );
+  height: 4em;
+  width: 14%;
+  line-height: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+}
+.male-seat-type{
+    background: radial-gradient(
+    circle,
+    rgba(156, 195, 222, 1) 0%,
+    rgba(110, 185, 238, 1) 25%,
+    rgba(64, 144, 212, 1) 50%,
+    rgba(46, 135, 196, 1) 75%,
+    rgba(40, 121, 177, 1) 100%
+  );
+  height: 4em;
+  width: 14%;
+  line-height: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;   
+}
+.reserve-seat-type{
+    background: radial-gradient(circle, rgba(252, 121, 121, 1) 0%, rgba(249, 81, 81, 1) 25%, rgba(231, 53, 53, 1) 50%, rgba(255, 24, 24, 1) 75%, rgba(217, 6, 6, 1) 100%);
+    height: 4em;
+  width: 14%;
+  line-height: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px; 
+}
+.reset-btn {
+    width: 100%;
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .5s;
+    background-size: 200% auto;
+    color: #fff;
+    border-radius: 5em;
+    display: block;
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #06beb6 0%, #48b1bf 51%, #06beb6 100%);
+}
+.reset-btn:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+/* Booked seat css */
+.booked {
+    background-color: red !important; 
+    background-image: none !important; 
+    pointer-events: none; 
+    color: white; 
+    text-shadow: 2px 2px 5px #000; 
+}
