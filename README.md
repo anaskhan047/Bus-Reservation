@@ -35,7 +35,8 @@ Bus Reservation System
 
 **Clone the repository:**
 
-  git clone https://github.com/anaskhan047/bus-reservation-system.git
+  git clone (https://github.com/anaskhan047/bus-reservation-system.git)
+  git clone 
 
 Navigate to the project folder:
 
